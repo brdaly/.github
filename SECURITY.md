@@ -4,7 +4,10 @@
 
 **Do not open a public issue for security vulnerabilities.**
 
-Instead, email [security contact — to be configured per repository] with:
+Instead, use the repository's **Security → Advisories → Report a vulnerability**
+form (GitHub private vulnerability reporting). If that form is unavailable for
+a repository, use <https://dalyventures.com/> to request a secure reporting
+channel. Include:
 - Description of the vulnerability
 - Steps to reproduce
 - Impact assessment
