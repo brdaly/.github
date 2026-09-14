@@ -1,44 +1,62 @@
 # Support
 
-## Getting Help
+## Getting help
 
-- **Documentation:** Start with the repository README and docs/ directory
-- **Issues:** Check existing issues before opening a new one
-- **Discussions:** For questions or feature requests, use GitHub Discussions if available
+- **Documentation:** start with the repository README and its `docs/` directory.
+- **Issues:** search existing issues before opening a new one. Issues are the
+  only discussion channel; GitHub Discussions is not enabled on these
+  repositories, so do not wait for a reply there.
+- **Security:** never use a public issue. Follow [SECURITY.md](SECURITY.md),
+  which routes reports to the affected repository's private advisory form.
 
-## Repository Status
+## Repository status
 
-Each repository has a status classification (see below). This determines support expectations:
+Every repository states its status in its own README. The status says what you
+can expect from it, and nothing on this page overrides what a repository says
+about itself.
 
-| Status | Support | Use Case |
-|--------|---------|----------|
-| **Production** | Active maintenance | Live systems, production applications |
-| **Candidate** | Active development | Near-production, under verification |
-| **Labs/Prototype** | Limited support | Experimental work, proof-of-concept |
-| **Research** | Documentation only | Archived research artifacts |
-| **Historical** | None | Historical code, reference only |
+| Status | What it means | What support looks like |
+|---|---|---|
+| **Production** | Serving real users or real decisions. | Actively maintained. Bugs are triaged and fixed. |
+| **Candidate** | Complete and under verification, not yet operating in production. Deployment still requires documented setup steps. | Actively developed. Correctness issues are welcome; treat interfaces as unsettled. |
+| **Labs/Prototype** | Exploring an approach. Parts are deliberately unfinished. | Limited. Read it for the approach, not as something to depend on. |
+| **Research** | A published analysis or artifact. The result is the deliverable and the code exists to reproduce it. Dependencies and CI are kept current so the result stays reproducible. | Corrections to the method, data, or result are welcome. Feature requests generally are not. |
+| **Historical** | Kept as a record of earlier work. Not maintained. | None. Do not build on it. |
 
-Check the repository's README for its status.
+**Research is not archived.** A repository can be actively maintained and still
+be Research: the maintenance keeps the published result reproducible rather than
+adding capability. Genuinely dormant work is **Historical**.
 
-## Requesting Features
+## Requesting a feature
 
-- Review existing issues to avoid duplicates
-- Describe the use case and problem you're trying to solve
-- Explain how the feature would benefit the repository's purpose
+- Check existing issues first.
+- Describe the problem and who has it, not the implementation you have in mind.
+- Say how it fits the repository's stated purpose and status. A feature request
+  against a Research or Historical repository is unlikely to be taken up.
 
-## Bug Reports
+## Reporting a bug
 
 Include:
-- Current behavior and expected behavior
-- Steps to reproduce
-- Environment (OS, Node/Python version, dependencies)
-- Error messages or logs
-- Attempted workarounds
 
-## Code of Conduct
+- What happened and what you expected instead.
+- The steps to reproduce it, with the smallest input that still shows it.
+- Environment: operating system, Node or Python version, and how you installed
+  dependencies.
+- Any error message or log output, with secrets removed.
+- What you already tried.
 
-We expect respectful, constructive collaboration. Bad faith, harassment, or off-topic noise will result in issues being closed and contributors being blocked.
+For a **Research** repository, the most useful bug report is one that shows a
+published number cannot be reproduced from the committed data, and says which
+number and what you got instead.
 
-## License and Attribution
+## Conduct
 
-See the repository's LICENSE file. Third-party code and data use is documented separately in each repository.
+Respectful, constructive collaboration is expected. Bad faith, harassment, and
+off-topic noise get issues closed and contributors blocked.
+
+## Licence and attribution
+
+Licensing differs by repository, so check the repository's own `LICENSE`. Some
+are permissively licensed, some are source-visible for evaluation only, and
+third-party code and data carry their own terms, documented separately in each
+repository.
